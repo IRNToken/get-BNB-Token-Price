@@ -52,7 +52,7 @@ async function BitqueryAPICall(){
      let quotePrice2 = y.shift()
      const z = (({quotePrice}) => ({quotePrice}))(quotePrice2)
      const price = (JSON.stringify(z));
-     document.getElementById("root").innerHTML =  (price)
+     document.getElementById("root").innerHTML =  "root"+(price)
     console.log(z)
   console.log(price)
 
