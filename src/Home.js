@@ -52,7 +52,8 @@ async function bitqueryAPICall(){
      const price = (JSON.stringify(z)); 
      let x = (price.replace(/[{"quotPric":}e]/g,''))
 let l = (price.replace(/}/g,''));
-let b = (l.substring(14));
+let p = (l.substring(14));
+let b = (JSON.parse(p))
 if (b<0.01) { 
  
 function expo(x, f) {
@@ -61,7 +62,7 @@ function expo(x, f) {
  document.getElementById("root").innerHTML = 
 (expo(b, 3)) }
 
-else { document.getElementById("root").innerHTML = (    
+else { document.write("root").innerHTML = (    
 (parseFloat(b).toFixed(3)))}
    
     
