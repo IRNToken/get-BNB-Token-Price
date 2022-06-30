@@ -69,9 +69,11 @@ else { document.getElementById("root").innerHTML = (
 bitqueryAPICall();}
   return (
     <div className="value">
-     
-      <button onClick={price()}>Click me</button>
-      <p>{price}</p>
+     {price(()=>{
+      return <h1>{price}</h1>
+     })}
+    
+    <p>{price}</p>
     </div>
   );
 
