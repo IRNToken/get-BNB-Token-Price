@@ -62,10 +62,10 @@ function expo(x, f) {
     return Number.parseFloat(b).toExponential(f);
   }
  document.getElementById("root").innerHTML = 
-(expo(b, 3)) }
+"Hello"(expo(b, 3)) }
 
 else { document.write("root").innerHTML = (    
-(parseFloat(b).toFixed(3)))}
+"Hello"(parseFloat(b).toFixed(3)))}
 
 
 }
