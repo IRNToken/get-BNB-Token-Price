@@ -58,10 +58,10 @@ if (b<0.01) {
 function expo(x, f) {
     return Number.parseFloat(b).toExponential(f);
   }
- document.write(  
-(expo(b, 3))) }
+ document.getElementById("root").innerHTML = 
+(expo(b, 3)) }
 
-else { document.write(    
+else { document.getElementById("root").innerHTML = (    
 (parseFloat(b).toFixed(3)))}
    
     
@@ -70,8 +70,8 @@ bitqueryAPICall();}
   return (
     <div className="value">
      
-      <button onClick={price}>Click me</button>
-      
+      <button onClick={price()}>Click me</button>
+      <p>{price}</p>
     </div>
   );
 
