@@ -45,7 +45,7 @@ const opts = {
         query
     })
 };
-async function BitqueryAPICall(){
+async function bitqueryAPICall(){
   const result = await fetch(url, opts).then(res => res.json()) 
   console.log((result.data.ethereum.dexTrades))
      var y = (result.data.ethereum.dexTrades)
