@@ -1,4 +1,4 @@
-import {  useEffect } from 'react';
+
 
 const Home = () => {
 
@@ -51,16 +51,25 @@ async function BitqueryAPICall(){
      var y = (result.data.ethereum.dexTrades)
      let quotePrice2 = y.shift()
      const z = (({quotePrice}) => ({quotePrice}))(quotePrice2)
-     const price = (JSON.stringify(z));
-     document.getElementById("root").innerHTML =  "root"+(price)
-    console.log(z)
-  console.log(price)
+     const price = (JSON.stringify(z)); 
+     let x = (price.replace(/[{"quotPric":}e]/g,''))
+let l = (price.replace(/}/g,''));
+let p = (l.substring(14));
+let b = (JSON.parse(p))
+if (b<0.01) { 
+
+function expo(x, f) {
+    return Number.parseFloat(b).toExponential(f);
+  }
+ document.getElementById("root").innerHTML = 
+(expo(b, 3)) }
+
+else { document.write("root").innerHTML = (    
+(parseFloat(b).toFixed(3)))}
 
 
-    
 }
-BitqueryAPICall();}
-
+bitqueryAPICall();}
   return (
     <div className="value">
      {price(()=>{
