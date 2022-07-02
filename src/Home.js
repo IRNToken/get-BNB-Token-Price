@@ -64,7 +64,7 @@ function expo(x, f) {
  document.getElementById("root").innerHTML = 
 (expo(b, 3)) }
 
-else { document.write("root").innerHTML = (    
+else { document.getElementById("root").innerHTML = (    
 (parseFloat(b).toFixed(3)))}
 
 
