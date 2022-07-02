@@ -4,8 +4,8 @@ import Home from './Home';
 
 function App() {
   return (
-    <div className="App">
-    <p>"root1"</p>
+    <div className="Apps">
+    <strong>"root1"</strong>
       <div className="content">
        
     <p>"root"</p>
