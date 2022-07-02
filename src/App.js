@@ -5,7 +5,7 @@ import Home from './Home';
 function App() {
   return (
     <div className="Apps">
-    <strong><home /></strong>
+<Home />
       <div className="content">
        
     <p>"root"</p>
