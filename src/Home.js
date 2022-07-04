@@ -38,7 +38,7 @@ const opts = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-API-KEY": process.env.bitquery_key
+      "X-API-KEY": api_key
     },
     body: JSON.stringify({
         query
