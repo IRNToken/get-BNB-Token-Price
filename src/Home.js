@@ -1,5 +1,5 @@
 
-console.log( process.env.bitquery_key)
+let api_key = process.env.bitquery_key
 const Home = () => {
 
 let price = () => { 
@@ -38,7 +38,7 @@ const opts = {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "X-API-KEY": "BQYwoflfjaIhiTjYkb2XqT3XwbMszCGi"
+      "X-API-KEY": process.env.bitquery_key
     },
     body: JSON.stringify({
         query
