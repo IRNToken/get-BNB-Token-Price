@@ -1,5 +1,8 @@
-
+require('dotenv').config()
 let api_key = process.env.bitquery_key
+console.log(process.env.bitquery_key);
+console.log (api_key)
+
 const Home = () => {
 
 let price = () => { 
