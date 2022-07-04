@@ -1,8 +1,7 @@
 
-
+console.log( process.env.bitquery_key)
 const Home = () => {
 
-  
 let price = () => { 
   const query = `
 {
